@@ -1,10 +1,7 @@
 import React from 'react'
 import './sidebar.css';
 import HomeIcon from '@mui/icons-material/Home';
-import EqualizerIcon from '@mui/icons-material/Equalizer';
 import PersonIcon from '@mui/icons-material/Person';
-import DescriptionIcon from '@mui/icons-material/Description';
-import DirectionsCarIcon from '@mui/icons-material/DirectionsCar';
 import InventoryIcon from '@mui/icons-material/Inventory';
 import AddBoxIcon from '@mui/icons-material/AddBox';
 import ManageAccountsIcon from '@mui/icons-material/ManageAccounts';
@@ -63,19 +60,15 @@ function Sidebar() {
         </div>
 
         <div className="sidebarMenu">
-          <h3 className="sidebarTitle">Hóa đơn</h3>
+          <h3 className="sidebarTitle">Bills</h3>
           <ul className="sidebarList">
             <li className="sidebarListItem" onClick={enableActive}>
               <HourglassTopIcon className='sidebarIcon'/>
-              <Link onClick={enableActive} to='/admin/bills/confirm'  style={{  color: 'inherit', textDecoration: 'inherit' }}> Chờ duyệt </Link> 
+              <Link onClick={enableActive} to='/admin/bills/pending'  style={{  color: 'inherit', textDecoration: 'inherit' }}> Pending </Link> 
             </li>
             <li className="sidebarListItem" onClick={enableActive}>
               <AddBoxIcon className='sidebarIcon'/>
-              Quản lý hóa đơn
-            </li>
-            <li className="sidebarListItem" onClick={enableActive}>
-              <DescriptionIcon className='sidebarIcon'/>
-              Thống kê hóa đơn
+              All bills
             </li>
           </ul>
         </div>

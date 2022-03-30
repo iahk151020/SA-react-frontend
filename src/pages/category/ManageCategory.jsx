@@ -24,7 +24,7 @@ const columns = [
 
 function createData(stt, categoryName) {
     return {stt, categoryName};
-  }
+}
 
 function ManageCategory() {
 

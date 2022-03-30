@@ -12,6 +12,7 @@ import './App.css';
 import ManageCategory from "./pages/category/ManageCategory";
 import ProductList from "./pages/products/ProductList";
 import ModifyProduct from "./pages/products/ModifyProduct";
+import PendingList from "./pages/bill/PendingList";
 
 function App() {
   return (
@@ -46,6 +47,13 @@ function App() {
             <div className="container">
               <Sidebar/>
               <ModifyProduct/>
+            </div>
+          </Route>
+          <Route exact path="/admin/bills/pending">
+            <Topbar/>
+            <div className="container">
+              <Sidebar/>
+              <PendingList/>
             </div>
           </Route>
       </Switch>
