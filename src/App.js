@@ -13,6 +13,9 @@ import ManageCategory from "./pages/category/ManageCategory";
 import ProductList from "./pages/products/ProductList";
 import ModifyProduct from "./pages/products/ModifyProduct";
 import PendingList from "./pages/bill/PendingList";
+import PendingBill from "./pages/bill/PendingBill";
+import AddProduct from "./pages/products/AddProduct";
+import PaypalTest from "./pages/paypal/PaypalTest";
 
 function App() {
   return (
@@ -54,6 +57,27 @@ function App() {
             <div className="container">
               <Sidebar/>
               <PendingList/>
+            </div>
+          </Route>
+          <Route exact path="/admin/bills/pending/:id">
+            <Topbar/>
+            <div className="container">
+              <Sidebar/>
+              <PendingBill/>
+            </div>
+          </Route>
+          <Route exact path="/admin/add_product">
+            <Topbar/>
+            <div className="container">
+              <Sidebar/>
+              <AddProduct/>
+            </div>
+          </Route>
+          <Route exact path="/admin/paypal">
+            <Topbar/>
+            <div className="container">
+              <Sidebar/>
+              <PaypalTest/>
             </div>
           </Route>
       </Switch>

@@ -7,6 +7,7 @@ import AddBoxIcon from '@mui/icons-material/AddBox';
 import ManageAccountsIcon from '@mui/icons-material/ManageAccounts';
 import HourglassTopIcon from '@mui/icons-material/HourglassTop';
 import CategoryIcon from '@mui/icons-material/Category';
+import PaidIcon from '@mui/icons-material/Paid';
 import {Link} from 'react-router-dom';
 
 function Sidebar() {
@@ -29,6 +30,10 @@ function Sidebar() {
               <HomeIcon className='sidebarIcon'/>
               <Link to='/admin' onClick={enableActive}  style={{  color: 'inherit', textDecoration: 'inherit' }}>Homepage</Link>
             </li>
+            <li className="sidebarListItem active">
+              <PaidIcon className='sidebarIcon'/>
+              <Link to='/admin/paypal' onClick={enableActive}  style={{  color: 'inherit', textDecoration: 'inherit' }}>Paypal</Link>
+            </li>
           </ul>
         </div>
 
@@ -38,10 +43,16 @@ function Sidebar() {
             <li className="sidebarListItem" onClick={enableActive}>
               <CategoryIcon className='sidebarIcon'/>
               <Link to='/admin/manage-category' onClick={enableActive}  style={{  color: 'inherit', textDecoration: 'inherit' }}>Manage category</Link>
-            </li><li className="sidebarListItem" onClick={enableActive}>
+            </li>
+            <li className="sidebarListItem" onClick={enableActive}>
               <InventoryIcon className='sidebarIcon'/>
               <Link to='/admin/products' onClick={enableActive}  style={{  color: 'inherit', textDecoration: 'inherit' }}>Manage product</Link>
             </li>
+            <li className="sidebarListItem" onClick={enableActive}>
+              <AddBoxIcon className='sidebarIcon'/>
+              <Link to='/admin/add_product' onClick={enableActive}  style={{  color: 'inherit', textDecoration: 'inherit' }}>Add product</Link>
+            </li>
+            
           </ul>
         </div>
 
