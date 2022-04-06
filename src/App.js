@@ -16,6 +16,7 @@ import PendingList from "./pages/bill/PendingList";
 import PendingBill from "./pages/bill/PendingBill";
 import AddProduct from "./pages/products/AddProduct";
 import PaypalTest from "./pages/paypal/PaypalTest";
+import HomeCustomer from "./pages/customerHome/homeCustomer"
 
 function App() {
   return (
@@ -80,6 +81,11 @@ function App() {
               <PaypalTest/>
             </div>
           </Route>
+
+          <Route exact path = "/customer/home">
+            <HomeCustomer/>
+          </Route>
+
       </Switch>
     </Router>
   );
