@@ -96,7 +96,7 @@ function CustomerHeader() {
 						</div>
 						<div className="mainmenu pull-left">
 							<ul className="nav navbar-nav collapse navbar-collapse">
-								<li><Link to ="/customer/home">Home</Link></li>
+								<li><Link to="/customer/home">Home</Link></li>
 								<li className="dropdown"><a href="#" className="active">Shop<i className="fa fa-angle-down"></i></a>
                                     <ul role="menu" className="sub-menu">
                                         <li><a href="shop.html" className="active">Products</a></li>
