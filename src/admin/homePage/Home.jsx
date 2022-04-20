@@ -1,6 +1,6 @@
 import React from 'react'
-import Chart from '../../components/chart/Chart';
-import FeaturedInfo from '../../components/featuredInfo/FeaturedInfo';
+import Chart from '../../customer/components/chart/Chart';
+import FeaturedInfo from '../../customer/components/featuredInfo/FeaturedInfo';
 import './home.css';
 
 function Home() {

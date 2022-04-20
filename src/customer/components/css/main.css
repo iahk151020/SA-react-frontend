@@ -8,7 +8,6 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background:;
   position: relative;
   font-weight:400px;
 }
@@ -899,7 +898,6 @@ h2.title {
   transition: height 500ms ease 0s;
   width: 100%;
   display: block;
-  opacity:;
 }
 
 .single-products:hover .product-overlay {
@@ -1579,7 +1577,7 @@ h2.title {
 
 
 #cart_items .cart_info .table.table-condensed tr {
-  border-bottom: 1px solid#F7F7F0
+  border-bottom: 1px solid #F7F7F0
 }
 
 #cart_items .cart_info .table.table-condensed tr:last-child {
@@ -1742,7 +1740,7 @@ h2.title {
 
 .user_info .single_field.zip-field input {
   background: transparent;
-  border: 1px solid#F0F0E9
+  border: 1px solid #F0F0E9
 }
 
 .user_info > li {
@@ -1797,7 +1795,142 @@ h2.title {
 .step-one {
   margin-bottom: -10px
 }
+.text-muted {
+  color: #6c757d !important
+}
+.card>.list-group:first-child .list-group-item:first-child {
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem
+}
+.card>.list-group:last-child .list-group-item:last-child {
+  border-bottom-right-radius: .25rem;
+  border-bottom-left-radius: .25rem
+}
+.d-flex {
+  display: -ms-flexbox !important;
+  display: flex !important
+}
+.justify-content-between {
+  -ms-flex-pack: justify !important;
+  justify-content: space-between !important
+}
 
+.align-items-center {
+  -ms-flex-align: center !important;
+  align-items: center !important
+}
+.order-md-2 {
+  -ms-flex-order: 2;
+  order: 2
+}
+
+.col-md-4 {
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%
+}
+.invalid-feedback {
+  display: none;
+  width: 100%;
+  margin-top: .25rem;
+  font-size: 80%;
+  color: #dc3545
+}
+.order-md-1 {
+  -ms-flex-order: 1;
+  order: 1
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+.form-inline .custom-control {
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+
+.form-inline .custom-control-label {
+  margin-bottom: 0
+}
+.custom-checkbox .custom-control-label::before {
+  border-radius: .25rem
+}
+.custom-radio .custom-control-label::before {
+  border-radius: 50%
+}
+.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff
+}
+.btn-lg {
+  padding: .5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: .3rem
+}
+.btn-block {
+  display: block;
+  width: 100%
+}
+
+.btnsubmit {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.btnsubmit:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.btnsubmit:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.btnsubmit:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
 .register-req, .step-one .heading {
   background: none repeat scroll 0 0 #F0F0E9;
   color: #363432;
@@ -2388,7 +2521,7 @@ h2.title {
 
 .text-area textarea {
   background: transparent;
-  border: 1px solid#F7F7F0
+  border: 1px solid #F7F7F0
 }
 
 .btn.btn-primary {

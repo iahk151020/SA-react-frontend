@@ -4,24 +4,29 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import Login from './pages/login/Login';
-import Home from './pages/homePage/Home';
-import Topbar from './components/topbar/Topbar';
-import Sidebar from './components/sidebar/Sidebar';
+import Login from './admin/login/Login';
+import Home from './admin/homePage/Home';
+import Topbar from './customer/components/topbar/Topbar';
+import Sidebar from './customer/components/sidebar/Sidebar';
 import './App.css';
-import ManageCategory from "./pages/category/ManageCategory";
-import ProductList from "./pages/products/ProductList";
-import ModifyProduct from "./pages/products/ModifyProduct";
-import PendingList from "./pages/bill/PendingList";
-import PendingBill from "./pages/bill/PendingBill";
-import AddProduct from "./pages/products/AddProduct";
-import PaypalTest from "./pages/paypal/PaypalTest";
-import HomeCustomer from "./pages/customerHome/homeCustomer"
+import ManageCategory from "./admin/category/ManageCategory";
+import ProductList from "./admin/products/ProductList";
+import ModifyProduct from "./admin/products/ModifyProduct";
+import PendingList from "./admin/bill/PendingList";
+import PendingBill from "./admin/bill/PendingBill";
+import AddProduct from "./admin/products/AddProduct";
+import PaypalTest from "./admin/paypal/PaypalTest";
+import HomeCustomer from "./customer/customerHome/homeCustomer"
+import Cart from "./customer/cart/Cart"
+import ProductDetail from "./customer/productDetail/ProductDetail";
+import CustomerLogin from "./customer/login/customerLogin";
+import Checkout from "./customer/checkout/checkout";
 
 function App() {
   return (
     <Router classname='App'>
       <Switch>
+        {/* ADMIN */}
         <Route exact path="/admin/login">
           <Login/>
         </Route>
@@ -85,6 +90,29 @@ function App() {
           <Route exact path = "/customer/home">
             <HomeCustomer/>
           </Route>
+
+    {/* CUSTOMER */}
+          <Route exact path = "/customer/cart">
+            <Cart/>
+          </Route>
+
+          <Route exact path = "/customer/cart">
+            <Cart/>
+          </Route>
+
+          <Route exact path = "/customer/productdetail">
+            <ProductDetail/>
+          </Route>
+
+          <Route exact path = "/customer/login">
+            <CustomerLogin/>
+          </Route>
+
+          <Route exact path = "/customer/checkout">
+            <Checkout/>
+          </Route>
+
+        
 
       </Switch>
     </Router>
